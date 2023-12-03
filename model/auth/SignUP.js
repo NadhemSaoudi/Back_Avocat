@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Sign=mongoose.model('Sign',{
+const Signup=mongoose.model('Signup',{
 
 mail:{
     type:String,
@@ -44,4 +44,4 @@ cin:{
 
 
 })
-module.exports=Sign;
+module.exports = Signup; 

@@ -1,8 +1,9 @@
 const express = require('express');
-const router = express.Router();
+const Router = express.Router();
+Router.use(express.json());
 const AjoutRendezVous = require('../../model/rendezvous/AjoutRendezVous');
 
-router.post('/nouveau-rendez-vous', async (req, res) => {
+Router.post('/nouveau-rendez-vous', async (req, res) => {
     try {
         const nouveauRendezVous = new AjoutRendezVous({
             date: req.body.date 
@@ -17,4 +18,4 @@ router.post('/nouveau-rendez-vous', async (req, res) => {
     }
 });
 
-module.exports = router;
+module.exports = Router;

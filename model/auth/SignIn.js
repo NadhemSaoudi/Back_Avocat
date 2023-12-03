@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const SignIn = mongoose.model('SignIn', {
+const SignIn = mongoose.model('Liste des Avocats', {
 
 
 mail:{
@@ -33,3 +33,4 @@ password:{
 
 
 });
+module.exports = SignIn;

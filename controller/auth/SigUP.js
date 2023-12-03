@@ -1,7 +1,7 @@
 const express=require('express')
 const Router=express.Router()
 const bcrypt=require('bcryptjs')
-const SignUp= require('../../model/auth/Sign.js')
+const SignUp= require('../../model/auth/SignUP')
 Router.use(express.json())
 Router.post('/SignUp',async (req,res)=>{
 data=req.body

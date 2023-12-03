@@ -1,7 +1,7 @@
 const express = require('express');
 const Router = express.Router();
 const bcrypt = require('bcryptjs');
-const SignUp = require('../../model/auth/Sign.js');
+const SignUp = require('../../model/auth/SignIn');
 
 Router.use(express.json());
 
